@@ -1,0 +1,12 @@
+&args pname
+pascal %pname% -si 1
+delete vt@@.run -no_verify -no_query -report
+&data bind
+  lo %pname%
+  li paslib
+  li vapplb
+  li
+  rdc
+  file
+&end
+delete %pname%.bin -report
